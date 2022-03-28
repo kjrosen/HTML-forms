@@ -45,25 +45,46 @@
         
         <form>
         
-            <input type="text" name="name">  <!--Your name-->
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name">
+            <br>
 
-            <input type="text" name="recipient"> <!--Who are we sending this to?-->
-
-            <select name="melon">
+            <label for="recipient">Who are we sending this to?</label>
+            <input type="text" name="recipient" id="recipient"> 
+            <br>
+            
+            <label for="melon-type">
+            What type of melon do you want?</label>
+            <select name="melon" id="melon-type">
                 <option value="watermelon">Watermelon</option>
                 <option value="canteloupe">Canteloupe</option>
                 <option value="honeydew">Honeydew</option>
             </select>
+            <br>
 
             When should we deliver?
-            <input type="radio" name="time-of-day" value="am" id="morning-delivery"> Morning
-            <input type="radio" name="time-of-day" value="pm" id="evening-delivery"> Evening
-            <input type="radio" name="time-of-day" value="any" id="any-delivery"> Any Time
+            <input type="radio" name="time-of-day" value="am" id="morning-delivery"> 
+            <label for="morning-delivery">Morning</label>
+            <input type="radio" name="time-of-day" value="pm" id="evening-delivery">
+            <label for="evening-delivery">Evening</label>
+            <input type="radio" name="time-of-day" value="any" id="any-delivery"> 
+            <label for="any-delivery">Any Time</label>
+            <br>
 
+
+<!-- <input type="checkbox" name="genre" value="pop" id="pop">
+<label for="pop">Pop</label>
+
+<input type="checkbox" name="genre" value="hiphop" id="hiphop">
+<label for="hiphop">Hip Hop</label>
+
+<input type="checkbox" name="genre" value="other" id="other">
+<label for="other">Other</label> -->
               
-            <textarea name="message">
             Enter your message:
+            <textarea name="message">
             </textarea>
+            <br>
             
             Subscribe to our newsletter
             <input type="checkbox" name="subscribe" value="yes">
