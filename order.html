@@ -41,32 +41,37 @@
         </table>
 
 
-        Order Form
+        <h2>Order Form</h2>
+        
+        <form>
+        
+            <input type="text" name="name">  <!--Your name-->
 
-        Your name
+            <input type="text" name="recipient"> <!--Who are we sending this to?-->
 
-        Who are we sending this to?
+            <select name="melon">
+                <option value="watermelon">Watermelon</option>
+                <option value="canteloupe">Canteloupe</option>
+                <option value="honeydew">Honeydew</option>
+            </select>
 
-        Choose a melon
-        Watermelon
-        Canteloupe
-        Honeydew
+            When should we deliver?
+            <input type="radio" name="time-of-day" value="am" id="morning-delivery"> Morning
+            <input type="radio" name="time-of-day" value="pm" id="evening-delivery"> Evening
+            <input type="radio" name="time-of-day" value="any" id="any-delivery"> Any Time
 
-        When should we deliver?
-        Morning
-        Evening
-        Any time
+              
+            <textarea name="message">
+            Enter your message:
+            </textarea>
+            
+            Subscribe to our newsletter
+            <input type="checkbox" name="subscribe" value="yes">
 
-        Enter your message:
-
-        Subscribe to our newsletter
-        Yes
+            <input type="submit">
+            
+        </form>
 
     </body>
-
-
-
-
-
 
 </html>
